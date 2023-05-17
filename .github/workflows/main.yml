@@ -2,8 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
@@ -20,8 +19,8 @@ jobs:
       - name: Upload to server
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-server: ${{ secrets.SERVER }}
-          ftp-username: ${{ secrets.USERNAME }}
-          ftp-password: ${{ secrets.PASSWORD }}
+          server: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
           local-dir: ./dist/
           server-dir: /sites/justin.willemet.be/projets/tfa/
