@@ -1,0 +1,11 @@
+.section{
+
+  &--colors{
+    border-radius: 40px;
+    width: 100%;
+    max-width: $desktop;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, #F29559 0%, #E6AACE 100%);
+  }
+}

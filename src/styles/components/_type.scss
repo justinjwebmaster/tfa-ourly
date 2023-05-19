@@ -44,3 +44,9 @@ p{
   color: $black;
   margin-bottom: 20px;
 }
+
+// ondition si dans une section colors
+.section--colors .title{
+  background: $black;
+  color: $black;
+}
