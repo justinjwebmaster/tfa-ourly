@@ -29,7 +29,7 @@
       font-size: 30px;
       font-weight: $extraBold;
       text-decoration: none;
-      color: #040F16;
+      color: $black;
       transition-duration: 0.3s ease-in-out;
       transition-property: color;
 
@@ -57,6 +57,7 @@
           color: $black;
           text-transform: uppercase;
           font-weight: 300;
+          
           &:hover{
             color: $orange;
           }
