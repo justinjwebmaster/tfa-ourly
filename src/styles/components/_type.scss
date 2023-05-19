@@ -6,8 +6,10 @@ body {
 }
 
 .title{
-  background: linear-gradient(135deg, $orange, $pink);
-  background-clip: text;
+  background: linear-gradient(135deg, #F29559 0%, #E6AACE 100%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   color: transparent;
+  max-width: 600px;
 }

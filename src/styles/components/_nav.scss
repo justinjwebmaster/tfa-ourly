@@ -29,7 +29,17 @@
       font-size: 30px;
       font-weight: $extraBold;
       text-decoration: none;
-      color: $orange;
+      color: #040F16;
+      transition-duration: 0.3s ease-in-out;
+      transition-property: color;
+
+      &:hover{
+        background: linear-gradient(135deg, $orange 0%, $pink 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
     }
 
     .navigation__list{
