@@ -1,10 +1,13 @@
 body {
-  font-family: sans-serif;
-  font-size: $size-text;
-  line-height: 1.5;
-  color: $c-text;
+  font-family: 'Inter', sans-serif;
+  font-size: $fontSize;
+  line-height: 1.4;
+  color: $orange;
 }
 
-.title {
-  color: $c-alt;
+.title{
+  background: linear-gradient(135deg, $orange, $pink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

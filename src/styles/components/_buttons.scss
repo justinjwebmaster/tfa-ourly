@@ -1,0 +1,24 @@
+.cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  width: 234px;
+  height: 44px;
+
+  padding: 1px 10px 0 10px;
+
+  background: linear-gradient(92.87deg, #F29559 -0.17%, #E6AACE 100%);
+  border-radius: 40px;
+
+  .cta__content{
+    font-weight: $bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $white;
+    
+  }
+}

@@ -1,5 +1,29 @@
-$c-bg: #efefef;
-$c-alt: #e41612;
-$c-text: #444;
+$orange: #F29559;
+$pink: #E6AACE;
+$white: #F0F4EF;
+$blue: #001242;
+$black: #040F16;
 
-$size-text: 18px;
+// opacity
+$blue20: rgba(0, 18, 66, 0.2);
+$blue40: rgba(0, 18, 66, 0.4);
+
+// shadows
+$shadow20: 0 0 40px $blue20;
+$shadow40: 0 0 40px $blue40;
+
+// font
+$fontSize: 20px;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$extraBold: 800;
+$black: 900;
+
+// max-Wwidth
+$desktop: 1440px;
+$tablet: 1024px;
+$mobile: 768px;
+
