@@ -2,7 +2,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: $fontSize;
   line-height: 1.4;
-  color: $orange;
+  color: $black;
 }
 
 .title{
@@ -12,4 +12,34 @@ body {
   background-clip: text;
   color: transparent;
   max-width: 600px;
+
+  &--big{
+    font-size: 41px;
+    font-weight: $bold;
+    line-height: 115%;
+  }
+
+  &--medium{
+    font-size: 35px;
+    font-weight: $bold;
+    line-height: 120%;
+  }
+
+  &--contrast{
+    background: $black;
+    width: 100%;
+  }
+}
+
+span .title{
+  width: 100%;
+  background: $black;
+}
+
+p{
+  font-weight: $regular;
+  font-size: 20px;
+  line-height: 150%;
+  color: $black;
+  margin-bottom: 20px;
 }
