@@ -6,11 +6,13 @@ main{
 }
 
 .section{
+  box-sizing: border-box;
+
   width: 100%;
   max-width: $desktop;
 
   margin-bottom: 100px;
-  padding-top: 100px;
+  padding: 100px 45px;
 
   &--colors{
     border-radius: 40px;
@@ -30,8 +32,8 @@ main{
 
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 0px;
+  padding-right: 0px;
 
   background: linear-gradient(90deg, rgba(4, 15, 22, 0.5) 29.17%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/gestion-horaire-sablier-avec-Ourly.jpg');
   background-position: center center;
@@ -42,7 +44,7 @@ main{
 
   color: $white;
 
-  border-radius: 60px;
+  border-radius: 40px;
 
   &__content{
     display: flex;
