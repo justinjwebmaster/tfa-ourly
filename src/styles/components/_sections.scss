@@ -1,5 +1,5 @@
 main{
-  width: 100%;
+  width: $wdesktop;
   max-width: $desktop;
   margin-left: auto;
   margin-right: auto;
@@ -10,8 +10,6 @@ main{
 
   width: 100%;
   max-width: $desktop;
-
-  margin-bottom: 100px;
   padding: 100px 45px;
 
   &--colors{
