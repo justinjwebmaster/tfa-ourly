@@ -9,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url(../../assets/images/backgroundLine.svg);
+  background-image: url(../../assets/images/Grille.svg);
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center center;
@@ -21,14 +21,17 @@
 .g2to6{
   grid-column: 2 / 7;
 }
+.g3to7{
+  grid-column: 3 / 8;
+}
 .g7to8{
   grid-column: 7 / 9;
 }
 .g4to9{
-  grid-column: 4 / 9;
+  grid-column: 4 / 10;
 }
 .g3to10{
-  grid-column: 3 / 10;
+  grid-column: 3 / 11;
 }
 .g6to10{
   grid-column: 6 / 11;
