@@ -33,7 +33,7 @@ main{
   }
 
   &--horaire{
-    background: linear-gradient(90deg, rgba(255, 255, 255, .98) 30%, rgba(255, 255, 255, 0.05) 100%), url('../../assets/images/gestion-horaire-sablier-avec-Ourly.jpg');
+    background: linear-gradient(90deg, $white 30%, rgba(255, 255, 255, 0.05) 100%), url('../../assets/images/gestion-horaire-sablier-avec-Ourly.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
