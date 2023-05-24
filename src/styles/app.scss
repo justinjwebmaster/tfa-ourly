@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 @import 'utils/normalize';
 @import 'utils/variables';
 @import 'components/type';
@@ -10,6 +12,10 @@
 @import 'components/buttons';
 @import 'components/sections';
 @import 'components/footer';
+
+body{
+  background-color: $white;
+}
 
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
