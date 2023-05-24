@@ -46,6 +46,14 @@ main{
     z-index: -1;
     box-shadow: $shadow20;
   }
+
+  &--cta{
+    background-color: $white;
+
+    .grid {
+      background: none;
+    }
+  }
 }
 
 // Header
