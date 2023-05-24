@@ -26,9 +26,8 @@ body {
   }
 
   &--contrast{
-    background: $black;
-    color: $black;
     width: 100%;
+    display: inline-block;
   }
 }
 
