@@ -13,6 +13,12 @@ body {
   color: transparent;
   max-width: 600px;
 
+  &--extra{
+    font-size: 149px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+
   &--big{
     font-size: 41px;
     font-weight: $bold;
@@ -29,6 +35,14 @@ body {
     width: 100%;
     display: inline-block;
   }
+
+  &--center{
+    text-align: center;
+  }
+}
+
+.ctaText{
+  text-align: center;
 }
 
 span .title{
