@@ -62,10 +62,10 @@ main{
     z-index: 100;
   }
   &--dev2{
-    z-index: 110;
+    z-index: 200;
   }
   &--dev3{
-    z-index: 120;
+    z-index: 300;
   }
 }
 
@@ -134,10 +134,9 @@ main{
 
 // margin 
 .mt-100{
-  margin-top: 100px;
+  margin-top: 400px;
 }
 
 .sectionDev{
   position: relative;
-  margin-bottom: 400px;
 }
