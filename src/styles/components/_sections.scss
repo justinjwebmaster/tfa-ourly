@@ -53,6 +53,20 @@ main{
       background: none;
     }
   }
+
+  &--dev{
+    transform-origin: top center;
+  }
+
+  &--dev1{
+    z-index: 800;
+  }
+  &--dev2{
+    z-index: 900;
+  }
+  &--dev3{
+    z-index: 1000;
+  }
 }
 
 // Header
@@ -121,4 +135,9 @@ main{
 // margin 
 .mt-100{
   margin-top: 100px;
+}
+
+.sectionDev{
+  position: relative;
+  margin-bottom: 400px;
 }
