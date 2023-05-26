@@ -1,0 +1,63 @@
+.footer{
+  position: relative;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: $desktop;
+  padding: 0 45px;
+
+  z-index: 10;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &--bottom{
+      position: absolute;
+      bottom: 80px;
+      right: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__el{
+    text-decoration: none;
+
+    &--legal{
+      margin: 0;
+    }
+  }
+}
+
+.logoList{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: baseline;
+
+  margin-top: 40px;
+  margin-bottom: 0px;
+
+  list-style-type: none;
+
+
+  &__el{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__img{
+    width: 75px;
+    height: auto;
+  }
+}

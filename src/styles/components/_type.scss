@@ -41,6 +41,15 @@ body {
   &--center{
     text-align: center;
   }
+
+  &--colors{
+    color: $black;
+    background: none;
+
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+  }
 }
 
 .ctaText{
@@ -69,4 +78,13 @@ p{
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
   background-clip: unset;
+}
+
+.bold{
+  font-weight: $bold;
+}
+
+.line{
+  display: inline-block;
+  width: 100%;
 }
