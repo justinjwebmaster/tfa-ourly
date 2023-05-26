@@ -92,27 +92,3 @@ gsap.to(".section--dev3", {
     start: "top 320px",
     end: "top 280px",
   }});
-
-
-
-// gsap.to(".section--dev2", {
-//     position: "sticky",
-//     top: "240px",
-    
-//     scrollTrigger: {
-//       trigger: ".section--dev2",
-//       start: "top 240px",
-//       end: "bottom 200px",
-//       scrub: true,
-//     }});
-  
-// gsap.to(".section--dev2", {
-//     scale: .9,
-  
-//     scrollTrigger: {
-//       trigger: ".section--dev2",
-//       start: "top 240px",
-//       end: "bottom 200px",
-//       scrub: true,
-//     }});
-
