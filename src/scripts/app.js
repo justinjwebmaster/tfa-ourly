@@ -63,7 +63,7 @@ gsap.to(".section--dev2", {
     end: "top 240px",
   }});
 
-gsap.fromTo(".section--dev1", {scale: .9},{
+gsap.to(".section--dev1", {
   scale: .8,
 
   scrollTrigger: {
