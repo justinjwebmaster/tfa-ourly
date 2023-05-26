@@ -48,8 +48,8 @@ gsap.to(".section--dev1", {
 
   scrollTrigger: {
     trigger: ".section--dev1",
-    start: "top 220px",
-    end: "bottom 200px",
+    start: "top 280px",
+    end: "bottom 240px",
     scrub: true,
   }});
 
@@ -63,6 +63,16 @@ gsap.to(".section--dev2", {
     end: "top 240px",
   }});
 
+gsap.fromTo(".section--dev1", {scale: .95},{
+  scale: .8,
+
+  scrollTrigger: {
+    trigger: ".section--dev2",
+    start: "top 280px",
+    end: "bottom 240px",
+    scrub: true,
+  }});
+
 gsap.to(".section--dev2", {
   scale: .9,
 
@@ -72,6 +82,17 @@ gsap.to(".section--dev2", {
     end: "bottom 240px",
     scrub: true,
   }});
+
+gsap.to(".section--dev3", {
+  position: "sticky",
+  top: "280px",
+  
+  scrollTrigger: {
+    trigger: ".section--dev3",
+    start: "top 320px",
+    end: "top 280px",
+  }});
+
 
 
 // gsap.to(".section--dev2", {
