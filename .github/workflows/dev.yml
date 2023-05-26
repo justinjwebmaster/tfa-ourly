@@ -2,7 +2,7 @@ name: Build and Deploy dev branch
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ devSection ]
 
 jobs:
   build:
