@@ -46,7 +46,7 @@ gsap.to(".section--dev1", {
   
   scrollTrigger: {
     trigger: ".section--dev1",
-    start: "top 220px",
+    start: "top 300px",
   }});
 
 gsap.to(".section--dev1", {
@@ -66,7 +66,7 @@ gsap.to(".section--dev2", {
   
   scrollTrigger: {
     trigger: ".section--dev2",
-    start: "top 280px",
+    start: "top 340px",
   }});
 
 gsap.fromTo(".section--dev1", {scale: .9},{
@@ -97,5 +97,4 @@ gsap.to(".section--dev3", {
   scrollTrigger: {
     trigger: ".section--dev3",
     start: "top 380px",
-    scrub: true,
   }});
