@@ -144,6 +144,11 @@ main{
   position: relative;
 }
 
+.section__part{
+  width: 100%;
+  max-width: $mobile;
+}
+
 @media (min-width: $desktop){
   main{
     width: $wdesktop;
@@ -155,6 +160,10 @@ main{
     padding: 100px 45px;
 
     &--colors{
+      max-width: $desktop;
+    }
+
+    &__part{
       max-width: $desktop;
     }
   }
