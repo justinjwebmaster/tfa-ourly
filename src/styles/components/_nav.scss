@@ -5,9 +5,9 @@
   width: 100%;
   z-index: 1000;
 
-  .navigation__content{
+  &__content{
     width: 100%;
-    max-width: $desktop;
+    max-width: $wmobile;
 
     margin-left: auto;
     margin-right: auto;
@@ -64,6 +64,15 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: $desktop){
+  .navigation{
+    
+    &__content{
+      max-width: $desktop;
     }
   }
 }
