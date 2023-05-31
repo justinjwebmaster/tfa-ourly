@@ -15,6 +15,8 @@
   // background-position: center center;
 }
 
+
+
 .g1to5{
   grid-column: 1 / 6;
 }
@@ -53,4 +55,55 @@
 }
 .g1to12{
   grid-column: 1 / -1;
+}
+
+@media (max-width: $mobile){
+  .grid{
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+
+    width: 100%;
+    max-width: calc($wmobile - 20px);
+  }
+
+  .g1to5{
+    grid-column: 1 / -1;
+  }
+  .g2to6{
+    grid-column: 1 / -1;
+  }
+  .g3to7{
+    grid-column: 1 / -1;
+  }
+  .g7to8{
+    grid-column: 1 / -1;
+  }
+  .g4to9{
+    grid-column: 1 / -1;
+  }
+  .g3to10{
+    grid-column: 1 / -1;
+  }
+  .g6to10{
+    grid-column: 1 / -1;
+  }
+  .g7to10{
+    grid-column: 1 / -1;
+  }
+  .g11to12{
+    grid-column: 1 / -1;
+  }
+  .g6to12{
+    grid-column: 1 / -1;
+  }
+  .g7to12{
+    grid-column: 1 / -1;
+  }
+  .g9to12{
+    grid-column: 1 / -1;
+  }
+  .g1to12{
+    grid-column: 1 / -1;
+  }
+
 }
