@@ -46,7 +46,7 @@ gsap.to(".section--dev1", {
   
   scrollTrigger: {
     trigger: ".section--dev1",
-    start: "top 200px",
+    start: "top 220px",
   }});
 
 gsap.to(".section--dev1", {
@@ -62,11 +62,11 @@ gsap.to(".section--dev1", {
 gsap.to(".section--dev2", {
   position: "sticky",
   top: "240px",
-  zIndex: 110,
+  scale: 1,
   
   scrollTrigger: {
     trigger: ".section--dev2",
-    start: "top 240px",
+    start: "top 280px",
   }});
 
 gsap.fromTo(".section--dev1", {scale: .9},{
@@ -92,10 +92,10 @@ gsap.to(".section--dev2", {
 gsap.to(".section--dev3", {
   position: "sticky",
   top: "280px",
+  scale: 1,
   
   scrollTrigger: {
     trigger: ".section--dev3",
     start: "top 380px",
-    end: "top 280px",
     scrub: true,
   }});
