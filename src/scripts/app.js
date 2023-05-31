@@ -32,6 +32,13 @@ gsap.registerPlugin(ScrollTrigger);
 //   i = i + 40;
     
 // });
+gsap.to(".section--dev1", {
+  scale: 1,
+
+  scrollTrigger: {
+    trigger: ".section--dev1",
+    start: "top bottom",
+  }});
 
 gsap.to(".section--dev1", {
   position: "sticky",
@@ -55,6 +62,7 @@ gsap.to(".section--dev1", {
 gsap.to(".section--dev2", {
   position: "sticky",
   top: "240px",
+  zIndex: 110,
   
   scrollTrigger: {
     trigger: ".section--dev2",
