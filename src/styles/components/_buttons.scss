@@ -28,13 +28,25 @@
     margin-left: auto;
     margin-right: auto;
 
-    padding: 21px 80px 20px 80px;
+    padding: 11px 40px 10px 40px;
 
     border-radius: 60px;
 
     .cta__content{
-      font-size: 59px;
-      line-height: 70px;
+      font-size: 29px;
+      line-height: 40px;
     }
   }
 }
+@media (min-width: $desktop){
+  .cta{
+    &--big{
+      padding: 21px 80px 20px 80px;
+
+      .cta__content{
+        font-size: 59px;
+        line-height: 70px;
+      }
+    }
+  }
+} 
