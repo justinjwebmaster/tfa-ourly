@@ -41,6 +41,9 @@
 .g7to10{
   grid-column: 7 / 11;
 }
+.g7to11{
+  grid-column: 7 / 12;
+}
 .g11to12{
   grid-column: 11 / -1;
 }
@@ -88,6 +91,9 @@
     grid-column: 1 / -1;
   }
   .g7to10{
+    grid-column: 1 / -1;
+  }
+  .g7to11{
     grid-column: 1 / -1;
   }
   .g11to12{
