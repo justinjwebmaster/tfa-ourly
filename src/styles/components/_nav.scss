@@ -5,6 +5,8 @@
   width: 100%;
   z-index: 1000;
 
+  transition: top 0.4s;
+
   &__content{
     width: 100%;
     max-width: $wmobile;

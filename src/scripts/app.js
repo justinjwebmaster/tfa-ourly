@@ -42,7 +42,7 @@ gsap.to(".section--dev1", {
 
 gsap.to(".section--dev1", {
   position: "sticky",
-  top: "200px",
+  top: "140px",
   
   scrollTrigger: {
     trigger: ".section--dev1",
@@ -61,7 +61,7 @@ gsap.to(".section--dev1", {
 
 gsap.to(".section--dev2", {
   position: "sticky",
-  top: "240px",
+  top: "180px",
   scale: 1,
   
   scrollTrigger: {
@@ -91,10 +91,27 @@ gsap.to(".section--dev2", {
 
 gsap.to(".section--dev3", {
   position: "sticky",
-  top: "280px",
+  top: "220px",
   scale: 1,
   
   scrollTrigger: {
     trigger: ".section--dev3",
     start: "top 380px",
   }});
+
+
+
+  // Sticky nav
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+
+  var currentScrollpos = window.pageYOffset;
+  if(prevScrollpos > currentScrollpos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-120px";
+  }
+
+  prevScrollpos = currentScrollpos;
+}
