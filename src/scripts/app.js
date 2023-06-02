@@ -75,11 +75,22 @@ function stickyDev(){
       trigger: ".section--dev3",
       start: "top 380px",
     }});
-
 }
-stickyDev();
 
-  // Sticky nav
+// effectuée l'animation de la section--dev uniquement sur desktop
+function startStickyDev(){
+  if (window.innerWidth > 1024) {
+    stickyDev();
+  }else{
+    // all mt-100 et supprimer mt-100
+    document.querySelectorAll(".mt-100").forEach(function(el){
+      el.classList.remove("mt-100");
+    });
+  }
+}
+startStickyDev();
+
+// Sticky nav
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {

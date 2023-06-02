@@ -10,7 +10,7 @@ main{
 
   width: 100%;
   max-width: $mobile;
-  padding: 100px 0px;
+  padding: 100px 0;
 
   z-index: 10;
 
@@ -61,10 +61,12 @@ main{
   &--dev1{
     position: relative;
     z-index: 100;
+    margin-bottom: 20px;
   }
   &--dev2{
     position: relative;
     z-index: 200;
+    margin-bottom: 20px;
   }
   &--dev3{
     position: relative;
@@ -80,8 +82,8 @@ main{
 
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 
   width: 100%;
   max-width: $wmobile;
@@ -138,7 +140,7 @@ main{
   box-shadow: none;
 }
 
-// margin 
+// margin
 .mt-100{
   margin-top: 400px;
 }
@@ -171,10 +173,6 @@ main{
 
     &--dev{
       padding: 45px 45px;
-    }
-
-    &--dev2, &--dev3{
-      margin-top: 400px;
     }
   }
 
