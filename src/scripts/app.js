@@ -39,6 +39,7 @@ function stickyDev(){
   gsap.to(".section--dev2", {
     position: "sticky",
     top: "180px",
+    marginBottom: "0px",
     scale: 1,
 
     scrollTrigger: {
@@ -76,7 +77,6 @@ function stickyDev(){
       start: "top 380px",
     }});
 }
-
 // effectuée l'animation de la section--dev uniquement sur desktop
 function startStickyDev(){
   if (window.innerWidth > 1024) {
@@ -90,8 +90,8 @@ function startStickyDev(){
 }
 startStickyDev();
 
-// Sticky nav
 
+// Sticky nav
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 
@@ -104,3 +104,25 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollpos;
 }
+
+
+// animation du bouton CTA au scroll (Rotation sur deux axes)
+gsap.fromTo(".cta--big", {
+    rotationZ: "3deg",
+    rotationX: "-10deg",
+    rotationY: "-20deg",
+  },
+  {
+    rotationZ: "-3deg",
+    rotationX: "20deg",
+    rotationY: "20deg",
+
+    scrollTrigger: {
+    trigger: ".cta--big",
+    start: "bottom bottom",
+    end: "top top",
+    scrub: .8,
+      markers: true,
+  }
+});
+

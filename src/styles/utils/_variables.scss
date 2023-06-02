@@ -7,10 +7,12 @@ $black: #040F16;
 // opacity
 $blue20: rgba(0, 18, 66, 0.2);
 $blue40: rgba(0, 18, 66, 0.4);
+$blue80: rgba(0, 18, 66, 0.8);
 
 // shadows
 $shadow20: 0 0 40px $blue20;
 $shadow40: 0 0 40px $blue40;
+$shadowBig: 0 20px 80px $blue80;
 
 // font
 $fontSize: 20px;

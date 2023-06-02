@@ -28,9 +28,13 @@
     margin-left: auto;
     margin-right: auto;
 
+    margin-top: 60px;
+
     padding: 11px 40px 10px 40px;
 
     border-radius: 60px;
+
+    box-shadow: $shadowBig;
 
     .cta__content{
       font-size: 29px;
@@ -49,4 +53,4 @@
       }
     }
   }
-} 
+}
