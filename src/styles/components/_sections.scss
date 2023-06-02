@@ -160,14 +160,16 @@ main{
 
   .section{
     max-width: $desktop;
-    padding: 100px 45px;
+    padding: 45px 45px;
+
+    margin: 55px auto;
 
     &--colors{
       max-width: $desktop;
     }
 
     &--img{
-      padding-top: 180px;
+      padding-top: 140px;
       margin-top: -120px;
     }
 
@@ -179,6 +181,7 @@ main{
   .header{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 120px;
 
     &__title{
       font-size: 41px;
@@ -189,5 +192,8 @@ main{
       font-size: 149px;
       line-height: 110%;
     }
+  }
+  .mt-100{
+    margin-top: 400px;
   }
 }

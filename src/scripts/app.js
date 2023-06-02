@@ -106,8 +106,9 @@ window.onscroll = function() {
 }
 
 
-// animation du bouton CTA au scroll (Rotation sur deux axes)
-gsap.fromTo(".cta--big", {
+// animation animRota au scroll (Rotation sur 3 axes) (CTA)
+document.querySelectorAll(".animRota").forEach(function(el){
+gsap.fromTo(el, {
     rotationZ: "1deg",
     rotationX: "-10deg",
     rotationY: "-20deg",
@@ -118,11 +119,12 @@ gsap.fromTo(".cta--big", {
     rotationY: "20deg",
 
     scrollTrigger: {
-    trigger: ".cta--big",
+    trigger: el,
     start: "bottom bottom",
     end: "top top",
     scrub: .8,
       markers: true,
   }
+});
 });
 
