@@ -15,6 +15,7 @@
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
+  <!--TODO: Burger menu-->
 
   <nav class="navigation" id="navbar">
     <div class="navigation__content">
@@ -39,7 +40,7 @@
 
     <section class="section section--light section--presentation">
       <div class="grid">
-        <div class="secction__part g1to5">
+        <div class="section__part g1to5">
           <h2 class="title title--big">Révolutionnez la gestion des horaires en entreprise grâce à notre solution innovante</h2>
           <p class="">Le temps, c'est de l'argent. Et en entreprise, chaque minute compte. Mais comment optimiser son temps de travail quand on passe des heures à gérer les horaires de ses employés ? C'est la problématique à laquelle j'ai décidé de m’attaquer dans le cadre de mon TFA.</p>
         </div>
@@ -91,11 +92,11 @@
           <p class="">Ce SAAS (Site As A Service) permettrait aussi d'attribuer des tâches aux employés, ou à un groupe d’employés. Par exemple, Stéphane, magasinier, doit refaire le “facing du rayon des bières” (Attribution personnel) ou bien les magasiniers du magasin doivent (attribution à un groupe):</p>
           <ul class="todo">
             <li class="todo__el">
-              <input type="checkbox" class="todo__checkbox" disabled>
-              <label class="todo__text">Faire le facing du rayon des bières</label>
+              <input type="checkbox" class="todo__checkbox" disabled id="one">
+              <label name="one" for="one" class="todo__text">Faire le facing du rayon des bières</label>
             </li>
             <li class="todo__el">
-              <input type="checkbox" class="todo__checkbox" checked disabled>
+              <input type="checkbox" class="todo__checkbox" checked disabled id>
               <label class="todo__text">Nettoyer le magasin</label>
               <span class="todo__check">fait par Laurent</span>
             </li>
@@ -119,6 +120,8 @@
     </section>
 
     <section class="sectionDev">
+
+      <!--TODO: Changer le texte de la section--dev1 -->
       <div class="section section--colors section--dev section--dev1">
         <div class="grid">
           <h3 class="title title--medium g1to5">Une page de connexion</h3>
@@ -128,7 +131,7 @@
 
       <div class="section section--colors section--dev section--dev2 mt-100">
         <div class="grid">
-          <h3 class="title title--medium g1to5">L’interface employé avec la présentation de son horaire </h3>
+          <h3 class="title title--medium g1to5">L’interface &#171 employé &#187 avec la présentation de son horaire </h3>
           <ul class="liste g1to5">
             <li class="list__el">Vue de la liste des tâches en fonctions de la journée</li>
             <li class="list__el">La gestion des demandes de congés</li>
