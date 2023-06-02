@@ -108,12 +108,12 @@ window.onscroll = function() {
 
 // animation du bouton CTA au scroll (Rotation sur deux axes)
 gsap.fromTo(".cta--big", {
-    rotationZ: "3deg",
+    rotationZ: "1deg",
     rotationX: "-10deg",
     rotationY: "-20deg",
   },
   {
-    rotationZ: "-3deg",
+    rotationZ: "-1deg",
     rotationX: "20deg",
     rotationY: "20deg",
 
