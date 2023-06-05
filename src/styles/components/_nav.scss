@@ -22,7 +22,7 @@
     display: none;
   }
 
-  &__content{
+  &__content {
     width: 100%;
     max-width: $wmobile;
 
@@ -40,7 +40,7 @@
     color: $black;
     border-radius: 20px;
 
-    .navigation__brand{
+    .navigation__brand {
       font-size: 30px;
       font-weight: $extraBold;
       text-decoration: none;
@@ -48,7 +48,7 @@
       transition-duration: 0.3s ease-in-out;
       transition-property: color;
 
-      &:hover{
+      &:hover {
         background: linear-gradient(135deg, $orange 0%, $pink 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -56,10 +56,44 @@
         color: transparent;
       }
     }
+  }
+
+  &--left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__list{
+    display: flex;
+    align-items: left;
+    list-style-type: none;
 
 
 
+    .navigation__el{
+      margin: 0 0 0 2rem;
+
+      .navigation__link{
+        text-decoration: none;
+        font-size: 20px;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        &:hover{
+          color: $orange;
+        }
+        &:visited{
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile){
     .navigation__list {
+
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -138,43 +172,26 @@
       }
     }
   }
+
+
 }
 
 @media (min-width: $desktop){
   .navigation{
 
     &__content{
-      max-width: $desktop;
+      max-width: $wdesktop;
+      border-radius: 40px;
     }
 
-    &__cta{
+    &__burger{
+      display: none;
+    }
+
+    .cta{
       display: block;
     }
 
-    &__list{
-    display: flex;
-    list-style: none;
 
-    margin-right: auto;
-
-    .navigation__el{
-      margin-left: 2rem;
-
-      .navigation__link{
-        text-decoration: none;
-        font-size: 20px;
-        color: $black;
-        text-transform: uppercase;
-        font-weight: 300;
-
-        &:hover{
-          color: $orange;
-        }
-        &:visited{
-          color: $blue;
-        }
-      }
-    }
-  }
   }
 }
