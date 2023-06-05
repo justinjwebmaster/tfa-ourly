@@ -96,10 +96,10 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 
   var currentScrollpos = window.pageYOffset;
-  if (prevScrollpos > currentScrollpos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
+  if (prevScrollpos < currentScrollpos && document.querySelector(".navigation__list").classList.contains("navigation__list--active") == false) {
     document.getElementById("navbar").style.top = "-120px";
+  } else {
+    document.getElementById("navbar").style.top = "0";
   }
 
   prevScrollpos = currentScrollpos;
@@ -123,8 +123,23 @@ gsap.fromTo(el, {
     start: "bottom bottom",
     end: "top top",
     scrub: .8,
-      markers: true,
   }
 });
 });
 
+
+// burger menu
+document.querySelector(".navigation__burger").addEventListener("click", function(){
+  document.querySelector(".navigation__burger").classList.toggle("navigation__burger--active");
+  document.querySelector(".navigation__list").classList.toggle("navigation__list--active");
+  document.querySelectorAll(".navigation__el").forEach(function(el){
+    el.addEventListener("click", function() {
+      document.querySelector(".navigation__burger").classList.remove("navigation__burger--active");
+      document.querySelector(".navigation__list").classList.remove("navigation__list--active");
+    })});
+
+  document.querySelector(".navigation__brand").addEventListener("click", function() {
+    document.querySelector(".navigation__burger").classList.remove("navigation__burger--active");
+    document.querySelector(".navigation__list").classList.remove("navigation__list--active");
+  });
+});

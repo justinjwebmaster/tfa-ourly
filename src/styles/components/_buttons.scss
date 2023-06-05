@@ -25,6 +25,8 @@
     width: fit-content;
     height: fit-content;
 
+    z-index: 100;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -42,6 +44,19 @@
     }
   }
 }
+
+.navigation__burger{
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  font-weight: $bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-left: 20px;
+}
+
 @media (min-width: $desktop){
   .cta{
     &--big{

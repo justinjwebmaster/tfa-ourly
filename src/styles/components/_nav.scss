@@ -7,6 +7,21 @@
 
   transition: top 0.4s;
 
+  &__burger{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-weight: $bold;
+    color: $black;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .cta{
+    display: none;
+  }
+
   &__content{
     width: 100%;
     max-width: $wmobile;
@@ -14,7 +29,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    padding: 5px 17px 5px 45px;
+    padding: 5px 20px 5px 20px;
 
     display: flex;
     justify-content: space-between;
@@ -23,7 +38,7 @@
     background-color: $white;
     box-shadow: $shadow40;
     color: $black;
-    border-radius: 40px;
+    border-radius: 20px;
 
     .navigation__brand{
       font-size: 30px;
@@ -42,22 +57,55 @@
       }
     }
 
-    .navigation__list{
+
+
+    .navigation__list {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       list-style: none;
 
+      position: absolute;
+      top: 90px;
+      left: 10px;
+      right: 10px;
+      width: 100%;
+      max-width: $wmobile;
+      height: calc(100vh - 100px);
+      margin-left: auto;
       margin-right: auto;
+      padding: 20px 20px 20px 20px;
+
+      text-align: center;
+
+
+      background-color: $white;
+      box-shadow: $shadow40;
+      color: $black;
+      border-radius: 20px;
+
+      transform-origin: top right;
+      scale: 0;
+      transform: rotateX(90deg);
+      transition-duration: 300ms;
+      transition-timing-function: ease-in-out;
+
 
       .navigation__el{
-        margin-left: 2rem;
+        margin: 12px 12px 12px 0;
+
+        transform: translateX(100%) rotateZ(4deg);
+
 
         .navigation__link{
           text-decoration: none;
-          font-size: 20px;
+          font-size: 35px;
+          line-height: 140%;
           color: $black;
+          font-weight: $medium;
           text-transform: uppercase;
-          font-weight: 300;
-          
+
           &:hover{
             color: $orange;
           }
@@ -66,15 +114,67 @@
           }
         }
       }
+
+      &--active{
+        scale: 1;
+        transform: rotateX(0deg);
+        overflow: hidden;
+
+        .navigation__el{
+          transform: translateX(0) rotateZ(0deg) rotateX(0deg);
+        }
+        .navigation__el:nth-child(1){
+          transition-duration: 300ms;
+          transition-delay: 50ms;
+        }
+        .navigation__el:nth-child(2){
+          transition-duration: 300ms;
+          transition-delay: 100ms;
+        }
+        .navigation__el:nth-child(3){
+          transition-duration: 300ms;
+          transition-delay: 200ms;
+        }
+      }
     }
   }
 }
 
 @media (min-width: $desktop){
   .navigation{
-    
+
     &__content{
       max-width: $desktop;
     }
+
+    &__cta{
+      display: block;
+    }
+
+    &__list{
+    display: flex;
+    list-style: none;
+
+    margin-right: auto;
+
+    .navigation__el{
+      margin-left: 2rem;
+
+      .navigation__link{
+        text-decoration: none;
+        font-size: 20px;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 300;
+
+        &:hover{
+          color: $orange;
+        }
+        &:visited{
+          color: $blue;
+        }
+      }
+    }
+  }
   }
 }

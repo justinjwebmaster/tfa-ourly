@@ -15,7 +15,7 @@ main{
   z-index: 10;
 
   &--colors{
-    border-radius: 40px;
+    border-radius: 20px;
     width: 100%;
     max-width: $mobile;
     margin-left: auto;
@@ -38,7 +38,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 
-    border-radius: 40px;
+    border-radius: 20px;
 
     margin-top: -120px;
     padding-top: 180px;
@@ -76,7 +76,7 @@ main{
 
 // Header
 .header{
-  margin-top: 120px;
+  margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
 
@@ -97,7 +97,7 @@ main{
 
   color: $white;
 
-  border-radius: 40px;
+  border-radius: 20px;
 
   &__content{
     display: flex;
@@ -166,11 +166,13 @@ main{
 
     &--colors{
       max-width: $desktop;
+      border-radius: 40px;
     }
 
     &--img{
       padding-top: 140px;
       margin-top: -120px;
+      border-radius: 40px;
     }
 
     &--dev{
