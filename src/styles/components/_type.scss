@@ -7,11 +7,11 @@ body {
 }
 
 .title{
-  background: linear-gradient(135deg, #F29559 0%, #E6AACE 100%);
+  /*background: linear-gradient(135deg, #F29559 0%, #E6AACE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  background-clip: text;*/
+  color: $blue;
   max-width: 600px;
   margin-top: 0;
 
@@ -36,6 +36,11 @@ body {
   &--contrast{
     width: 100%;
     display: inline-block;
+    background: linear-gradient(135deg, $orange 0%, $pink 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
   }
 
   &--center{
@@ -43,12 +48,7 @@ body {
   }
 
   &--colors{
-    color: $blue;
     background: none;
-
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    background-clip: unset;
   }
 }
 
@@ -72,12 +72,7 @@ p{
 
 // si title dans une section colors
 .section--colors .title {
-  color: $blue;
   background: none;
-
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  background-clip: unset;
 }
 
 .bold{
