@@ -10,7 +10,7 @@ main{
 
   width: 100%;
   max-width: $mobile;
-  padding: 100px 0;
+  padding: 40px 10px;
 
   z-index: 10;
 
@@ -151,6 +151,33 @@ main{
 .sectionDev{
   position: relative;
 }
+figure{
+  padding: 0 20px;
+  margin: 0;
+  border-left:6px solid $white;
+}
+blockquote{
+  margin: 0;
+}
+.citation {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 110%;
+  margin-left: 0;
+
+
+  &:before{
+    content: "« ";
+    color: $white;
+    font-size: 28px;
+  }
+  &:after {
+    content: " »";
+    color: $white;
+    font-sier: 28px;
+  }
+}
+
 
 @media (min-width: $desktop){
   main{
