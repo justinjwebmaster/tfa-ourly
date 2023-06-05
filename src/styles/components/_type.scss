@@ -43,7 +43,7 @@ body {
   }
 
   &--colors{
-    color: $black;
+    color: $blue;
     background: none;
 
     -webkit-background-clip: unset;
@@ -72,7 +72,7 @@ p{
 
 // si title dans une section colors
 .section--colors .title {
-  color: $white;
+  color: $blue;
   background: none;
 
   -webkit-background-clip: unset;
@@ -85,6 +85,21 @@ p{
 }
 .uppercase{
   text-transform: uppercase;
+}
+.difference{
+  font-style: italic;
+  color: $black;
+}
+
+blockquote{
+  margin: 0;
+}
+.citation {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 110%;
+  margin-left: 0;
+  color: $blue;
 }
 
 .line{
