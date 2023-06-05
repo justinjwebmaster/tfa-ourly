@@ -164,18 +164,6 @@ blockquote{
   font-weight: 600;
   line-height: 110%;
   margin-left: 0;
-
-
-  &:before{
-    content: "« ";
-    color: $white;
-    font-size: 28px;
-  }
-  &:after {
-    content: " »";
-    color: $white;
-    font-sier: 28px;
-  }
 }
 
 
