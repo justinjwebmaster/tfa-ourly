@@ -1,11 +1,5 @@
 'use strict';
 
-// Lancement des fonctions
-startStickyDev();
-stickyNav();
-
-
-
 import { gsap } from 'gsap';
 
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -163,31 +157,35 @@ function parallaxHoraire() {
 
     scrollTrigger: {
       trigger: ".section--horaire",
-      start: "top center",
+      start: "top bottom",
       end: "bottom top",
       scrub: true,
     }
   })
   gsap.to(".horaire2", {
-    yPercent: 80,
+    yPercent: 110,
 
     scrollTrigger: {
       trigger: ".section--horaire",
-      start: "top center",
+      start: "top bottom",
       end: "bottom top",
       scrub: true,
     }
   })
   gsap.to(".horaire3", {
-    yPercent: -120,
+    yPercent: -160,
 
     scrollTrigger: {
       trigger: ".section--horaire",
-      start: "top center",
+      start: "top bottom",
       end: "bottom top",
       scrub: true,
     }
   })
 }
-parallaxHoraire();
 
+
+// Lancement des fonctions
+stickyNav();
+startStickyDev();
+parallaxHoraire();
