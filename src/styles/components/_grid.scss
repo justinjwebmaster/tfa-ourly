@@ -103,7 +103,7 @@
     grid-column: 1 / -1;
   }
   .g11to12{
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
   }
   .g6to12{
     grid-column: 1 / -1;
@@ -116,6 +116,11 @@
   }
   .g1to12{
     grid-column: 1 / -1;
+  }
+
+  .smartSup{
+    margin-top: -60px;
+    margin-right: 20px;
   }
 
 }
