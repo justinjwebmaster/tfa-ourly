@@ -160,6 +160,7 @@ main{
 }
 
 .horaire{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -170,7 +171,7 @@ main{
     width: auto;
     margin-bottom: 40px;
     border-radius: 0;
-    box-shadow: none;
+
 
     @media (max-width: $tablet) {
       height: 80px;

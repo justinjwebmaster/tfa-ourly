@@ -146,3 +146,37 @@ document.querySelector(".navigation__burger").addEventListener("click", function
     document.querySelector(".navigation__list").classList.remove("navigation__list--active");
   });
 });
+
+
+// parallax section horaire
+gsap.to(".horaire1", {
+  yPercent: 40,
+
+  scrollTrigger: {
+    trigger: ".section--horaire",
+    start: "top center",
+    end: "bottom top",
+    scrub: true,
+  }
+})
+gsap.to(".horaire2", {
+  yPercent: 80,
+
+  scrollTrigger: {
+    trigger: ".section--horaire",
+    start: "top center",
+    end: "bottom top",
+    scrub: true,
+  }
+})
+gsap.to(".horaire3", {
+  yPercent: -120,
+
+  scrollTrigger: {
+    trigger: ".section--horaire",
+    start: "top center",
+    end: "bottom top",
+    scrub: true,
+  }
+})
+
