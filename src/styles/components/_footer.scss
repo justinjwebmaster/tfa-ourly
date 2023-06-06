@@ -61,3 +61,30 @@
     height: auto;
   }
 }
+
+@media (max-width: $mobile){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+
+    &__content{
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 100%;
+
+      &--bottom{
+        margin-top: 20px;
+      }
+    }
+  }
+  .logoList{
+    justify-content: left;
+    align-items: baseline;
+
+    &__img{
+      width: 50px;
+    }
+  }
+}
