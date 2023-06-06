@@ -132,10 +132,43 @@ main{
   }
 }
 
-.todo{
+.todo {
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
+
+  &__text {
+    &--check:before {
+      background-image: url('../../assets/images/check.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      margin-bottom: -3px;
+    }
+    &--notcheck:before {
+      background-image: url('../../assets/images/notcheck.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      margin-bottom: -3px;
+    }
+  }
+
+  &__check{
+    font-weight: $light;
+    font-size: 14px;
+    color: $orange;
+  }
 }
 
 // image

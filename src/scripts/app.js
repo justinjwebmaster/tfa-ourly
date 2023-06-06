@@ -19,7 +19,8 @@ function stickyDev(){
 
   gsap.to(".section--dev1", {
     position: "sticky",
-    top: "100px",
+    top: "120px",
+    marginBottom: "40px",
 
     scrollTrigger: {
       trigger: ".section--dev1",
@@ -38,8 +39,8 @@ function stickyDev(){
 
   gsap.to(".section--dev2", {
     position: "sticky",
-    top: "140px",
-    marginBottom: "0px",
+    top: "160px",
+    marginBottom: "40px",
     scale: 1,
 
     scrollTrigger: {
@@ -69,17 +70,19 @@ function stickyDev(){
 
   gsap.to(".section--dev3", {
     position: "sticky",
-    top: "180px",
+    top: "200px",
+    marginBottom: "40px",
     scale: 1,
 
     scrollTrigger: {
       trigger: ".section--dev3",
       start: "top 380px",
-    }});
+    }
+  });
 }
 // effectuée l'animation de la section--dev uniquement sur desktop
 function startStickyDev(){
-  if (window.innerWidth > 1024 && window.innerHeight > 800){
+  if (window.innerWidth > 1024 && window.innerHeight > 900){
     stickyDev();
   }else{
     // all mt-100 et supprimer mt-100

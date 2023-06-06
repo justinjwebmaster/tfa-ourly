@@ -88,7 +88,12 @@ p{
   font-style: italic;
   color: $black;
 }
-
+.legend{
+  font-size: 14px;
+  line-height: 150%;
+  color: $blue;
+  margin-bottom: 20px;
+}
 blockquote{
   margin: 0;
 }
