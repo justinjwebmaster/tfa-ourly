@@ -84,13 +84,13 @@ main{
 
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 
   width: 100%;
   max-width: $wmobile;
 
-  background: linear-gradient(90deg, rgba(4, 15, 22, 0.5) 29.17%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/sparPROVI.jpg');
+  background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/sparPROVI.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
