@@ -1,5 +1,11 @@
 'use strict';
 
+// Lancement des fonctions
+startStickyDev();
+stickyNav();
+
+
+
 import { gsap } from 'gsap';
 
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -91,22 +97,24 @@ function startStickyDev(){
     });
   }
 }
-startStickyDev();
 
 
 // Sticky nav
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+function stickyNav(){
+  let prevScrollpos = window.scrollY;
+  window.onscroll = function() {
 
-  var currentScrollpos = window.pageYOffset;
-  if (prevScrollpos < currentScrollpos && document.querySelector(".navigation__list").classList.contains("navigation__list--active") == false) {
-    document.getElementById("navbar").style.top = "-120px";
-  } else {
-    document.getElementById("navbar").style.top = "0";
+    let currentScrollpos = window.scrollY;
+    if (prevScrollpos < currentScrollpos && document.querySelector(".navigation__list").classList.contains("navigation__list--active") === false) {
+      document.getElementById("navbar").style.top = "-120px";
+    } else {
+      document.getElementById("navbar").style.top = "0";
+    }
+
+    prevScrollpos = currentScrollpos;
   }
-
-  prevScrollpos = currentScrollpos;
 }
+
 
 
 // animation animRota au scroll (Rotation sur 3 axes) (CTA)
@@ -149,34 +157,37 @@ document.querySelector(".navigation__burger").addEventListener("click", function
 
 
 // parallax section horaire
-gsap.to(".horaire1", {
-  yPercent: 40,
+function parallaxHoraire() {
+  gsap.to(".horaire1", {
+    yPercent: 40,
 
-  scrollTrigger: {
-    trigger: ".section--horaire",
-    start: "top center",
-    end: "bottom top",
-    scrub: true,
-  }
-})
-gsap.to(".horaire2", {
-  yPercent: 80,
+    scrollTrigger: {
+      trigger: ".section--horaire",
+      start: "top center",
+      end: "bottom top",
+      scrub: true,
+    }
+  })
+  gsap.to(".horaire2", {
+    yPercent: 80,
 
-  scrollTrigger: {
-    trigger: ".section--horaire",
-    start: "top center",
-    end: "bottom top",
-    scrub: true,
-  }
-})
-gsap.to(".horaire3", {
-  yPercent: -120,
+    scrollTrigger: {
+      trigger: ".section--horaire",
+      start: "top center",
+      end: "bottom top",
+      scrub: true,
+    }
+  })
+  gsap.to(".horaire3", {
+    yPercent: -120,
 
-  scrollTrigger: {
-    trigger: ".section--horaire",
-    start: "top center",
-    end: "bottom top",
-    scrub: true,
-  }
-})
+    scrollTrigger: {
+      trigger: ".section--horaire",
+      start: "top center",
+      end: "bottom top",
+      scrub: true,
+    }
+  })
+}
+parallaxHoraire();
 
