@@ -58,6 +58,8 @@ main{
 
   &--dev{
     transform-origin: top center;
+    padding-top: 100px;
+    overflow: hidden;
   }
 
   &--dev1{
@@ -90,7 +92,7 @@ main{
   width: 100%;
   max-width: $wmobile;
 
-  background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/sparPROVI.jpg');
+  background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('https://images.unsplash.com/photo-1592495981488-073153776d9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1812&q=80');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,6 +144,10 @@ main{
 
   box-shadow: 4px 10px 40px rgba(0, 18, 66, 0.4);
   border-radius: 20px;
+
+  &--dev{
+    margin-bottom: -250px;
+  }
 }
 
 .section--colors .img {
@@ -190,7 +196,7 @@ figure{
     }
 
     &--dev{
-      padding: 45px 45px;
+      padding: 100px 45px 45px 45px;
     }
   }
 

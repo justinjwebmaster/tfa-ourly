@@ -19,7 +19,7 @@ function stickyDev(){
 
   gsap.to(".section--dev1", {
     position: "sticky",
-    top: "140px",
+    top: "100px",
 
     scrollTrigger: {
       trigger: ".section--dev1",
@@ -31,14 +31,14 @@ function stickyDev(){
 
     scrollTrigger: {
       trigger: ".section--dev2",
-      start: "top 340px",
+      start: "top 300px",
       end: "top 240px",
       scrub: true,
     }});
 
   gsap.to(".section--dev2", {
     position: "sticky",
-    top: "180px",
+    top: "140px",
     marginBottom: "0px",
     scale: 1,
 
@@ -69,7 +69,7 @@ function stickyDev(){
 
   gsap.to(".section--dev3", {
     position: "sticky",
-    top: "220px",
+    top: "180px",
     scale: 1,
 
     scrollTrigger: {
@@ -79,7 +79,7 @@ function stickyDev(){
 }
 // effectuée l'animation de la section--dev uniquement sur desktop
 function startStickyDev(){
-  if (window.innerWidth > 1024) {
+  if (window.innerWidth > 1024 && window.innerHeight > 800){
     stickyDev();
   }else{
     // all mt-100 et supprimer mt-100
