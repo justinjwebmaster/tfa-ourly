@@ -26,20 +26,8 @@ main{
     box-shadow: $shadow40;
   }
 
-
-  &--img{
-    background: linear-gradient(90deg, rgba(4, 15, 22, 0.5) 29.17%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/gestion-horaire-sablier-avec-Ourly.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   &--horaire{
-    background: linear-gradient(90deg, $white 30%, rgba(255, 255, 255, 0.05) 100%), url('../../assets/images/gestion-horaire-sablier-avec-Ourly.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-color: $white;
     border-radius: 20px;
 
     margin-top: -120px;
@@ -168,6 +156,41 @@ main{
     font-weight: $light;
     font-size: 14px;
     color: $orange;
+  }
+}
+
+.horaire{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  .horaire__img {
+    height: 140px;
+    width: auto;
+    margin-bottom: 40px;
+    border-radius: 0;
+    box-shadow: none;
+
+    @media (max-width: $tablet) {
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    &:first-of-type{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:last-of-type{
+      margin-bottom: 0;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  :nth-child(1){
+    margin-left: 100px;
   }
 }
 
