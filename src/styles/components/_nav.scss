@@ -176,6 +176,20 @@
 
 }
 
+@media (min-width: $tablet){
+  .navigation{
+    border-radius: 40px;
+    &__content{
+      width: $wtablet;
+      max-width: $tablet;
+    }
+
+    &__burger{
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $desktop){
   .navigation{
     &__content{
