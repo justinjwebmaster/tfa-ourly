@@ -57,12 +57,12 @@ main{
   &--dev1{
     position: relative;
     z-index: 100;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   &--dev2{
     position: relative;
     z-index: 200;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   &--dev3{
     position: relative;
@@ -261,6 +261,10 @@ figure{
     &--dev{
       margin-top: 0;
     }
+  }
+
+  .mt-small{
+    margin-top: 40px;
   }
 }
 
