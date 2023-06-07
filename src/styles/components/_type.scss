@@ -6,6 +6,12 @@ body {
   background-color: $white;
 }
 
+@media (min-width: $desktop){
+  body{
+    font-size: 24px;
+  }
+}
+
 .title{
   /*background: linear-gradient(135deg, #F29559 0%, #E6AACE 100%);
   -webkit-background-clip: text;
@@ -57,6 +63,12 @@ body {
 }
 .ctaText{
   text-align: center;
+}
+
+.liste{
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 span .title{

@@ -17,6 +17,7 @@ $shadowBig: 0 20px 80px $blue80;
 // font
 $fontSize: 20px;
 
+
 $light: 300;
 $regular: 400;
 $medium: 500;
@@ -34,3 +35,6 @@ $wdesktop: calc(100% - 90px);
 $wtablet: calc(100% - 60px);
 $wmobile: calc(100% - 20px);
 
+@media (min-width: $desktop){
+  $fontSize: 24px;
+}
