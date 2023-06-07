@@ -48,6 +48,7 @@ main{
     transform-origin: top center;
     padding-top: 100px;
     overflow: hidden;
+    height: 700px;
   }
 
   &--dev1{
@@ -208,7 +209,7 @@ main{
   border-radius: 20px;
 
   &--dev{
-    margin-bottom: -250px;
+    margin-top: 45px;
   }
 }
 
