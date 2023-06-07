@@ -18,7 +18,10 @@
     line-height: 24px;
   }
 
-  .cta{
+  .cta--mobil{
+    margin-top: 20px;
+  }
+  .cta--desktop{
     display: none;
   }
 
@@ -101,12 +104,12 @@
       list-style: none;
 
       position: absolute;
-      top: 90px;
+      top: 70px;
       left: 10px;
       right: 10px;
       width: 100%;
       max-width: $wmobile;
-      height: calc(100vh - 100px);
+      height: 45vh;
       margin-left: auto;
       margin-right: auto;
       padding: 20px 20px 20px 20px;
@@ -121,7 +124,6 @@
 
       transform-origin: top right;
       scale: 0;
-      transform: rotateX(90deg);
       transition-duration: 300ms;
       transition-timing-function: ease-in-out;
 
@@ -129,7 +131,7 @@
       .navigation__el{
         margin: 12px 12px 12px 0;
 
-        transform: translateX(100%) rotateZ(4deg);
+        transform: translateX(150%) translateY(-150%);
 
 
         .navigation__link{
@@ -151,24 +153,24 @@
 
       &--active{
         scale: 1;
-        transform: rotateX(0deg);
         overflow: hidden;
 
         .navigation__el{
-          transform: translateX(0) rotateZ(0deg) rotateX(0deg);
+          transform: translateX(0) translateY(0);
         }
         .navigation__el:nth-child(1){
           transition-duration: 300ms;
-          transition-delay: 50ms;
-        }
-        .navigation__el:nth-child(2){
-          transition-duration: 300ms;
-          transition-delay: 100ms;
-        }
-        .navigation__el:nth-child(3){
-          transition-duration: 300ms;
           transition-delay: 200ms;
         }
+        .navigation__el:nth-child(2){
+           transition-duration: 300ms;
+           transition-delay: 300ms;
+         }
+        .navigation__el:nth-child(3){
+          transition-duration: 300ms;
+          transition-delay: 400ms;
+        }
+
       }
     }
   }
@@ -187,6 +189,15 @@
     &__burger{
       display: none;
     }
+
+    .cta {
+      display: flex;
+    }
+  }
+
+
+  .mobil-none{
+    display: none;
   }
 }
 
@@ -199,7 +210,7 @@
     }
 
     .cta{
-      display: block;
+      display: flex;
     }
 
 
