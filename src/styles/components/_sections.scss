@@ -37,6 +37,10 @@ main{
     box-shadow: $shadow20;
   }
 
+  &--rencontre{
+    box-shadow: $shadow40;
+  }
+
   &--cta{
 
     .grid {
@@ -48,7 +52,6 @@ main{
     transform-origin: top center;
     padding-top: 100px;
     overflow: hidden;
-    height: 700px;
   }
 
   &--dev1{
@@ -218,22 +221,48 @@ main{
 }
 
 // margin
-.mt-100{
+.mt-dev{
   margin-top: 400px;
 }
-.mt{
+.mt-big{
   margin-top: 100px;
 }
 
 .sectionDev{
   position: relative;
 }
+
 figure{
   padding: 0 20px;
   margin: 0;
   border-left:6px solid $blue;
 }
 
+@media (max-width: $mobile){
+  .order1{
+    order: 1;
+  }
+  .order2{
+    order: 2;
+  }
+
+  .section{
+    &--dev{
+      padding-bottom: 11px;
+      padding-top: 45px;
+    }
+
+    &--colors{
+      padding-bottom: 11px;
+    }
+  }
+
+  .img{
+    &--dev{
+      margin-top: 0;
+    }
+  }
+}
 
 @media (min-width: $desktop){
   main{
@@ -260,6 +289,8 @@ figure{
 
     &--dev{
       padding: 100px 45px 45px 45px;
+
+      height: 700px;
     }
   }
 
@@ -286,7 +317,7 @@ figure{
       line-height: 110%;
     }
   }
-  .mt-100{
+  .mt-dev{
     margin-top: 400px;
   }
 }

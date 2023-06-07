@@ -86,8 +86,8 @@ function startStickyDev(){
     stickyDev();
   }else{
     // all mt-100 et supprimer mt-100
-    document.querySelectorAll(".mt-100").forEach(function(el){
-      el.classList.remove("mt-100");
+    document.querySelectorAll(".mt-dev").forEach(function(el){
+      el.classList.remove("mt-dev");
     });
   }
 }
