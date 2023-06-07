@@ -134,20 +134,27 @@ gsap.fromTo(el, {
 
 
 // burger menu
-document.querySelector(".navigation__burger").addEventListener("click", function(){
-  document.querySelector(".navigation__burger").classList.toggle("navigation__burger--active");
-  document.querySelector(".navigation__list").classList.toggle("navigation__list--active");
-  document.querySelectorAll(".navigation__el").forEach(function(el){
-    el.addEventListener("click", function() {
-      document.querySelector(".navigation__burger").classList.remove("navigation__burger--active");
-      document.querySelector(".navigation__list").classList.remove("navigation__list--active");
-    })});
+function navBurger(){
+  let burger = document.querySelector(".navigation__burger");
+  let nav = document.querySelector(".navigation__list");
+  let navEl = document.querySelectorAll(".navigation__el");
+  let brand = document.querySelector(".navigation__brand");
 
-  document.querySelector(".navigation__brand").addEventListener("click", function() {
-    document.querySelector(".navigation__burger").classList.remove("navigation__burger--active");
-    document.querySelector(".navigation__list").classList.remove("navigation__list--active");
+  burger.addEventListener("click", function(){
+    burger.classList.toggle("navigation__burger--active");
+    nav.classList.toggle("navigation__list--active");
   });
-});
+  navEl.forEach(function(el){
+    el.addEventListener("click", function() {
+      burger.classList.remove("navigation__burger--active");
+      nav.classList.remove("navigation__list--active");
+    });
+  });
+  brand.addEventListener("click", function() {
+    burger.classList.remove("navigation__burger--active");
+    nav.classList.remove("navigation__list--active");
+  });
+}
 
 
 // parallax section horaire
@@ -189,4 +196,5 @@ function parallaxHoraire() {
 stickyNav();
 startStickyDev();
 parallaxHoraire();
+navBurger();
 
