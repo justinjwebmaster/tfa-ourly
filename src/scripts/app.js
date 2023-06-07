@@ -151,12 +151,12 @@ document.querySelector(".navigation__burger").addEventListener("click", function
 
 
 // parallax section horaire
-function parallaxHoraire(el) {
+function parallaxHoraire() {
   gsap.to(".horaire1", {
     yPercent: 40,
 
     scrollTrigger: {
-      trigger: el,
+      trigger: ".horaire",
       start: "top bottom",
       end: "bottom top",
       scrub: true,
@@ -166,7 +166,7 @@ function parallaxHoraire(el) {
     yPercent: 110,
 
     scrollTrigger: {
-      trigger: el,
+      trigger: ".horaire",
       start: "top bottom",
       end: "bottom top",
       scrub: true,
@@ -176,7 +176,7 @@ function parallaxHoraire(el) {
     yPercent: -160,
 
     scrollTrigger: {
-      trigger: el,
+      trigger: ".horaire",
       start: "top bottom",
       end: "bottom top",
       scrub: true,
@@ -188,7 +188,5 @@ function parallaxHoraire(el) {
 // Lancement des fonctions
 stickyNav();
 startStickyDev();
-document.querySelectorAll(".horaire").forEach(function(el) {
-  parallaxHoraire(el);
-});
+parallaxHoraire();
 
