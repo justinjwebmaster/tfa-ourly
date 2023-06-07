@@ -99,7 +99,7 @@ function stickyNav(){
   window.onscroll = function() {
 
     let currentScrollpos = window.scrollY;
-    if (prevScrollpos < currentScrollpos && document.querySelector(".navigation__list").classList.contains("navigation__list--active") === false) {
+    if (prevScrollpos < currentScrollpos && document.querySelector(".navigation__list").classList.contains("navigation__list--active") === false  && scrollY > 150) {
       document.getElementById("navbar").style.top = "-120px";
     } else {
       document.getElementById("navbar").style.top = "0";
