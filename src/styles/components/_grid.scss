@@ -63,6 +63,62 @@
   grid-column: 1 / -1;
 }
 
+@media (max-width: $tablet){
+  .grid{
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 10px;
+
+    width: 100%;
+    max-width: calc($tablet);
+  }
+
+  .g1to5{
+    grid-column: 2 / 8;
+  }
+  .g2to6{
+    grid-column: 2 / 8;
+  }
+  .g3to7{
+    grid-column: 2 / 8;
+  }
+  .g7to8{
+    grid-column: 5 / -1;
+  }
+  .g4to9{
+    grid-column: 2 / 8;
+  }
+  .g3to10{
+    grid-column: 2 / 8;
+  }
+  .g6to10{
+    grid-column: 2 / 8;
+  }
+  .g7to10{
+    grid-column: 2 / 8;
+  }
+  .g2to11{
+    grid-column: 1 / -1;
+  }
+  .g7to11{
+    grid-column: 2 / 8;
+  }
+  .g11to12{
+    grid-column: 4 / 8;
+  }
+  .g6to12{
+    grid-column: 2 / 8;
+  }
+  .g7to12{
+    grid-column: 2 / 8;
+  }
+  .g9to12{
+    grid-column: 4 / 8;
+  }
+  .g1to12{
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: $mobile){
   .grid{
     grid-template-columns: repeat(6, 1fr);
