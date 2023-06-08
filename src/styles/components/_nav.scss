@@ -94,7 +94,7 @@
     }
   }
 
-  @media (max-width: $mobile){
+  @media (max-width: calc($tablet - 1px)){
     .navigation__list {
 
       display: flex;
@@ -170,6 +170,10 @@
           transition-duration: 300ms;
           transition-delay: 400ms;
         }
+        .navigation__el:nth-child(4){
+          transition-duration: 300ms;
+          transition-delay: 500ms;
+        }
 
       }
     }
@@ -183,21 +187,13 @@
     border-radius: 40px;
     &__content{
       width: $wtablet;
-      max-width: $tablet;
     }
-
     &__burger{
       display: none;
     }
-
-    .cta {
-      display: flex;
+    .tablet-none{
+      display: none;
     }
-  }
-
-
-  .mobil-none{
-    display: none;
   }
 }
 
@@ -207,11 +203,16 @@
       width: $wdesktop;
       max-width: $desktop;
       border-radius: 40px;
+
+      .cta--desktop{
+        display: flex;
+      }
+      .cta--mobil{
+        display: none;
+      }
     }
 
-    .cta{
-      display: flex;
-    }
+
 
 
   }
