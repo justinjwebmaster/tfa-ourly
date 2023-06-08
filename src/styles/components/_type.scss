@@ -75,12 +75,12 @@ body {
 
   &:hover, &:focus{
 
-      color: black;
+    color: black;
+    transition-duration: 0.15s;
 
     .link--content:after{
       background: $black;
       transform: translateX(0%);
-      transition-duration: 0.15s;
     }
   }
 }
