@@ -397,13 +397,22 @@ figure{
 
 
   .order1{
-    order: 2;
+    order: 1;
   }
   .order2{
-    order: 1;
+    order: 2;
   }
 
   .smartSup{
     display: block;
+  }
+}
+
+@media (min-width: $desktop){
+  .order1{
+    order: 2;
+  }
+  .order2{
+    order: 1;
   }
 }
