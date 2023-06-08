@@ -189,7 +189,7 @@
       width: $wtablet;
     }
     &__burger{
-      display: none;
+      display: block;
     }
     .tablet-none{
       display: none;
@@ -211,9 +211,8 @@
         display: none;
       }
     }
-
-
-
-
+    &__burger{
+      display: none;
+    }
   }
 }

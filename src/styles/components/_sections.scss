@@ -305,6 +305,7 @@ figure{
     margin: 55px auto;
 
     &--horaire{
+      margin-top: -160px;
       padding-top: 180px;
     }
   }
@@ -314,9 +315,19 @@ figure{
     }
   }
 
+  .smartSup{
+    display: none;
+  }
+
+  .header{
+    width: 100%;
+    max-width: $wtablet;
+    margin-top: 100px;
+  }
+
 
   .mt-small{
-    margin-top: 40px;
+    margin-top: 60px;
   }
   .order1{
     order: 1;
@@ -381,5 +392,17 @@ figure{
   }
   .mt-dev{
     margin-top: 400px;
+  }
+
+
+  .order1{
+    order: 2;
+  }
+  .order2{
+    order: 1;
+  }
+
+  .smartSup{
+    display: block;
   }
 }
