@@ -293,10 +293,36 @@ figure{
 }
 
 @media (min-width: $mobile){
-  .section{
+  main{
     width: 100%;
     max-width: $wtablet;
+  }
+
+  .section{
+    width: 100%;
+    max-width: $tablet;
     padding: 45px 45px;
+    margin: 55px auto;
+
+    &--horaire{
+      padding-top: 180px;
+    }
+  }
+  .img{
+    &--dev{
+      margin-top: 0;
+    }
+  }
+
+
+  .mt-small{
+    margin-top: 40px;
+  }
+  .order1{
+    order: 1;
+  }
+  .order2{
+    order: 2;
   }
 }
 
