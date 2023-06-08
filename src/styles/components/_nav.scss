@@ -197,6 +197,19 @@
   }
 }
 
+@media (min-width: $tablet){
+  .navigation{
+    &__content{
+      width: 100%;
+      max-width: $wdesktop;
+      border-radius: 40px;
+    }
+    &__burger{
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $desktop){
   .navigation{
     &__content{

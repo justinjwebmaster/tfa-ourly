@@ -295,11 +295,11 @@ figure{
 @media (min-width: $mobile){
   main{
     width: 100%;
-    max-width: $wtablet;
+    max-width: $tablet;
   }
 
   .section{
-    width: 100%;
+    width: $wtablet;
     max-width: $tablet;
     padding: 45px 45px;
     margin: 55px auto;
@@ -344,6 +344,7 @@ figure{
   }
 
   .section{
+    width: 100%;
     max-width: $desktop;
     padding: 45px 45px;
 
