@@ -61,7 +61,8 @@ body {
   &--content{
     overflow: hidden;
 
-    &:after{
+    &::after{
+    &::after{
       content: "";
       display: block;
       width: 100%;

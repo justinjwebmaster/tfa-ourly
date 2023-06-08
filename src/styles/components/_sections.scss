@@ -130,7 +130,7 @@ main{
   margin-left: 0;
 
   &__text {
-    &--check:before {
+    &--check::before {
       background-image: url('../../assets/images/check.png');
       background-repeat: no-repeat;
       background-position: center center;
@@ -142,7 +142,7 @@ main{
       margin-right: 10px;
       margin-bottom: -3px;
     }
-    &--notcheck:before {
+    &--notcheck::before {
       background-image: url('../../assets/images/notcheck.png');
       background-repeat: no-repeat;
       background-position: center center;
