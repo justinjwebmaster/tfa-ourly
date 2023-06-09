@@ -132,7 +132,7 @@ main{
   &__text {
     &--check:before {
       content: '';
-      background-image: url('../../assets/images/check.svg');
+      background-image: url('../assets/images/check.svg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
@@ -145,7 +145,7 @@ main{
     }
     &--notcheck:before {
       content: '';
-      background-image: url('../../assets/images/notcheck.svg');
+      background-image: url('../assets/images/notcheck.svg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
