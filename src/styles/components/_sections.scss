@@ -262,14 +262,15 @@ figure{
   border-left:6px solid $blue;
 }
 
-@media (max-width: $mobile){
-  .order1{
-    order: 1;
-  }
-  .order2{
-    order: 2;
-  }
+.order1{
+  order: 2;
+}
+.order2{
+  order: 1;
+}
 
+
+@media (max-width: $mobile){
   .section{
     &--dev{
       padding-bottom: 11px;
@@ -328,12 +329,6 @@ figure{
 
   .mt-small{
     margin-top: 60px;
-  }
-  .order1{
-    order: 1;
-  }
-  .order2{
-    order: 2;
   }
 }
 
@@ -405,12 +400,6 @@ figure{
   }
 
 
-  .order1{
-    order: 2;
-  }
-  .order2{
-    order: 1;
-  }
 
   .mt-small{
     margin-top: 0;
