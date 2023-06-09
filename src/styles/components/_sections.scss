@@ -84,7 +84,7 @@ main{
   width: 100%;
   max-width: $wmobile;
 
-  background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/save-time.webp');
+  background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('../assets/images/save-time.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,7 +96,7 @@ main{
   border-radius: 20px;
 
   &--credits{
-    background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('../../assets/images/merci.webp');
+    background: linear-gradient(90deg, rgba(4, 15, 22, 0.8) 0%, rgba(4, 15, 22, 0.5) 50%, rgba(4, 15, 22, 0.05) 100%), url('../assets/images/merci.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
