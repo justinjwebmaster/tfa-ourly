@@ -96,7 +96,6 @@ span .title{
 
 p{
   font-weight: $regular;
-  font-size: 20px;
   line-height: 150%;
   color: $black;
   margin-bottom: 20px;
@@ -139,7 +138,11 @@ blockquote{
   display: inline-block;
   width: 100%;
 }
-
+@media (min-width: $tablet){
+  body{
+    font-size: $fontSizeDesktop;
+  }
+}
 @media (min-width: $desktop){
   .title{
     &--extra{
@@ -154,7 +157,6 @@ blockquote{
   }
 
   p{
-    font-size: 24px;
     line-height: 150%;
     margin-bottom: 24px;
   }
