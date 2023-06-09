@@ -337,6 +337,15 @@ figure{
   }
 }
 
+@media (max-width: $tablet){
+  .order1{
+    order: 1;
+  }
+  .order2{
+    order: 2;
+  }
+}
+
 @media (min-width: $tablet){
   main{
     width: 100%;
@@ -413,13 +422,6 @@ figure{
 }
 
 @media (min-width: $desktop){
-  .order1{
-    order: 2;
-  }
-  .order2{
-    order: 1;
-  }
-
   .mt-small{
     margin-top: 0;
   }
