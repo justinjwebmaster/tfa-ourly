@@ -82,7 +82,7 @@ function stickyDev(){
 }
 // effectuée l'animation de la section--dev uniquement sur desktop
 function startStickyDev(){
-  if (window.innerWidth > 1024 && window.innerHeight > 900){
+  if (window.innerWidth > 1024 && window.innerHeight > 900 && document.querySelector(".section--dev1") !== null){
     stickyDev();
   }else{
     // all mt-100 et supprimer mt-100
@@ -195,6 +195,8 @@ function parallaxHoraire() {
 // Lancement des fonctions
 stickyNav();
 startStickyDev();
-parallaxHoraire();
+if(document.querySelector(".horaire") !== null){
+  parallaxHoraire();
+}
 navBurger();
 
