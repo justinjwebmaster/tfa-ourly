@@ -203,10 +203,16 @@
       width: 100%;
       max-width: $wdesktop;
       border-radius: 40px;
+
+
+      .cta--mobil{
+        display: none;
+      }
     }
     &__burger{
       display: none;
     }
+
   }
 }
 
@@ -219,9 +225,6 @@
 
       .cta--desktop{
         display: flex;
-      }
-      .cta--mobil{
-        display: none;
       }
     }
     &__burger{
