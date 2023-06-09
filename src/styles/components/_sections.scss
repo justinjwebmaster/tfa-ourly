@@ -131,11 +131,12 @@ main{
 
   &__text {
     &--check:before {
+      content: '';
       background-image: url('../../assets/images/check.svg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
-      content: '';
+
       display: inline-block;
       width: 24px;
       height: 24px;
@@ -143,11 +144,12 @@ main{
       margin-bottom: -3px;
     }
     &--notcheck:before {
+      content: '';
       background-image: url('../../assets/images/notcheck.svg');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
-      content: '';
+
       display: inline-block;
       width: 24px;
       height: 24px;
