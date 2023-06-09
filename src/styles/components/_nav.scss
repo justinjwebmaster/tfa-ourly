@@ -32,7 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
 
     display: flex;
     justify-content: space-between;
@@ -75,7 +75,7 @@
 
 
     .navigation__el{
-      margin: 0 0 0 2rem;
+      margin: 0 0 0 20px;
 
       .navigation__link{
         text-decoration: none;
@@ -83,13 +83,6 @@
         color: $black;
         text-transform: uppercase;
         font-weight: 300;
-
-        &:hover{
-          color: $orange;
-        }
-        &:visited{
-          color: $blue;
-        }
       }
     }
   }
@@ -203,16 +196,17 @@
       width: 100%;
       max-width: $wdesktop;
       border-radius: 40px;
+    }
+    .cta--mobil{
+      display: none;
+    }
 
-
-      .cta--mobil{
-        display: none;
-      }
+    .cta--desktop{
+      display: flex;
     }
     &__burger{
       display: none;
     }
-
   }
 }
 
@@ -222,10 +216,6 @@
       width: $wdesktop;
       max-width: $desktop;
       border-radius: 40px;
-
-      .cta--desktop{
-        display: flex;
-      }
     }
     &__burger{
       display: none;
